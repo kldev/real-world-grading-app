@@ -1,5 +1,5 @@
 @serverUrl = http://0.0.0.0:3000
-@testToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbklkIjoyfQ.zO7Zez65KQ3AZ7NR_J48IHSxmoFDJF2dtT5Qrxwg6sY
+@testToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbklkIjo2fQ.mWjBzZnjS-gJ9tGS9BgmohxeiuhXKNV9_6S-5fqzaMY
 
 #### register demo
 POST {{serverUrl}}/login
@@ -16,7 +16,7 @@ Content-Type: application/json
 
 {
     "email": "testuser@fakemail.fake",
-    "emailToken": "81532380"
+    "emailToken": "84557910"
 }
 
 ### get coureses
