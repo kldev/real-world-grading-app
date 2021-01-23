@@ -1,0 +1,29 @@
+@serverUrl = http://0.0.0.0:3000
+@testToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbklkIjoyfQ.zO7Zez65KQ3AZ7NR_J48IHSxmoFDJF2dtT5Qrxwg6sY
+
+#### register demo
+POST {{serverUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "testuser@fakemail.fake"
+}
+
+
+#### authenticate
+POST {{serverUrl}}/authenticate
+Content-Type: application/json
+
+{
+    "email": "testuser@fakemail.fake",
+    "emailToken": "81532380"
+}
+
+### get coureses
+GET {{serverUrl}}/courses
+Authorization: Bearer {{testToken}}
+
+
+### get users
+GET {{serverUrl}}/users
+Authorization: Bearer {{testToken}}

@@ -12,6 +12,7 @@ async function main() {
   await prisma.test.deleteMany({})
   await prisma.user.deleteMany({})
   await prisma.course.deleteMany({})
+  await prisma.sendEmail.deleteMany({})
 
   const grace = await prisma.user.create({
     data: {
@@ -21,6 +22,7 @@ async function main() {
       social: {
         facebook: 'gracebell',
         twitter: 'therealgracebell',
+        naszaKlasa: "ello@nk.pl"
       },
     },
   })

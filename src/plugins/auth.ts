@@ -49,7 +49,7 @@ const authPlugin: Hapi.Plugin<null> = {
               throw err
             },
             payload: Joi.object({
-              email: Joi.string().email().required(),
+              email: Joi.string().required(),
             }),
           },
         },
@@ -63,7 +63,7 @@ const authPlugin: Hapi.Plugin<null> = {
           auth: false,
           validate: {
             payload: Joi.object({
-              email: Joi.string().email().required(),
+              email: Joi.string().required(),
               emailToken: Joi.string().required(),
             }),
           },
